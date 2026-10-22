@@ -1,0 +1,4 @@
+{"n": 100, "operation": "key_list_digest", "median_ms": 0.0384, "p95_ms": 0.0515, "reps": 200, "keys": 100}
+{"n": 100, "operation": "distinct_key_count", "median_ms": 0.0294, "p95_ms": 0.0331, "reps": 200, "keys": 80}
+{"n": 500, "operation": "key_list_digest", "median_ms": 0.1826, "p95_ms": 0.2401, "reps": 200, "keys": 500}
+{"n": 500, "operation": "distinct_key_count", "median_ms": 0.1416, "p95_ms": 0.2036, "reps": 200, "keys": 400}

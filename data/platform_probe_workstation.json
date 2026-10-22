@@ -1,0 +1,94 @@
+{
+  "host": {
+    "label": "workstation-m1max",
+    "cpu": "Apple M1 Max",
+    "machine": "arm64",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python": "3.11.2",
+    "cores": 10,
+    "loadavg_1min": 7.67,
+    "scheduling_jitter_p95_over_median": 1.058
+  },
+  "results": [
+    {
+      "operation": "member_sign",
+      "n": null,
+      "median_ms": 0.3126,
+      "p95_ms": 0.3232,
+      "min_ms": 0.3063,
+      "reps": 200
+    },
+    {
+      "operation": "single_verify",
+      "n": null,
+      "median_ms": 0.9792,
+      "p95_ms": 1.0138,
+      "min_ms": 0.9435,
+      "reps": 200
+    },
+    {
+      "operation": "pop_prove",
+      "n": null,
+      "median_ms": 0.3122,
+      "p95_ms": 0.3312,
+      "min_ms": 0.3004,
+      "reps": 200
+    },
+    {
+      "operation": "pop_verify",
+      "n": null,
+      "median_ms": 0.9921,
+      "p95_ms": 1.0336,
+      "min_ms": 0.9589,
+      "reps": 200
+    },
+    {
+      "operation": "aggregate",
+      "n": 10,
+      "median_ms": 0.0157,
+      "p95_ms": 0.0158,
+      "min_ms": 0.0157,
+      "reps": 30
+    },
+    {
+      "operation": "fast_aggregate_verify",
+      "n": 10,
+      "median_ms": 0.9708,
+      "p95_ms": 0.996,
+      "min_ms": 0.9665,
+      "reps": 30
+    },
+    {
+      "operation": "aggregate",
+      "n": 100,
+      "median_ms": 0.1509,
+      "p95_ms": 0.1673,
+      "min_ms": 0.15,
+      "reps": 30
+    },
+    {
+      "operation": "fast_aggregate_verify",
+      "n": 100,
+      "median_ms": 1.046,
+      "p95_ms": 1.0902,
+      "min_ms": 1.002,
+      "reps": 30
+    },
+    {
+      "operation": "aggregate",
+      "n": 500,
+      "median_ms": 0.7834,
+      "p95_ms": 0.8026,
+      "min_ms": 0.7669,
+      "reps": 30
+    },
+    {
+      "operation": "fast_aggregate_verify",
+      "n": 500,
+      "median_ms": 1.2897,
+      "p95_ms": 1.33,
+      "min_ms": 1.2712,
+      "reps": 30
+    }
+  ]
+}

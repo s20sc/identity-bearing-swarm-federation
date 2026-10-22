@@ -1,0 +1,840 @@
+{"seed": 0, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9878, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 0, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9756, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 0, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 0, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 0, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 0, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.2901, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 0, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.6416, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 1, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0727, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 1, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0189, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 1, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 1, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 1, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 1, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.0473, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 1, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.8264, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 2, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9595, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 2, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.2113, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 2, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 2, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 2, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 2, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.1653, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 2, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.5757, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 3, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.041, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 3, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9592, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 3, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 3, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 3, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 3, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.065, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 3, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.7604, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 4, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.014, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 4, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.04, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 4, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 4, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 4, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 4, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.1015, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 4, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.7408, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 5, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9818, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 5, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0462, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 5, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 5, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 5, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 5, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.1696, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 5, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.5932, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 6, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9258, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 6, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9003, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 6, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 6, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 6, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 6, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.2887, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 6, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.6088, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 7, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9848, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 7, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.083, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 7, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 7, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 7, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 7, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.224, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 7, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.6954, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 8, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0107, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 8, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.905, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 8, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 8, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 8, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 8, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.2636, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 8, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.5813, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 9, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.977, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 9, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9751, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 9, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 9, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 9, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 9, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.3442, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 9, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.6264, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 10, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.023, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 10, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.8451, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 10, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 10, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 10, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 10, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.2214, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 10, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.788, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 11, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9228, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 11, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0665, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 11, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 11, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 11, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 11, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.0423, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 11, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.7275, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 12, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9458, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 12, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9547, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 12, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 12, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 12, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 12, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.0629, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 12, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.7917, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 13, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9467, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 13, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.8239, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 13, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 13, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 13, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 13, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.0785, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 13, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.7035, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 14, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0599, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 14, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.8417, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 14, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 14, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 14, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 14, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.0187, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 14, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.7626, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 15, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0982, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 15, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9204, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 15, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 15, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 15, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 15, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.0822, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 15, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.6105, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 16, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0975, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 16, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.8821, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 16, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 16, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 16, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 16, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.3462, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 16, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.7377, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 17, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9359, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 17, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.8953, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 17, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 17, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 17, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 17, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.0533, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 17, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.6181, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 18, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0419, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 18, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9974, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 18, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 18, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 18, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 18, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.0172, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 18, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.5855, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 19, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9223, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 19, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9832, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 19, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 19, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 19, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 19, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.2067, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 19, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.6003, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 20, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.015, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 20, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9883, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 20, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 20, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 20, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 20, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.4843, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 20, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.7148, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 21, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.935, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 21, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9795, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 21, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 21, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 21, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 21, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.0435, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 21, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.6013, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 22, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9981, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 22, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0173, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 22, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 22, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 22, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 22, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.3407, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 22, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.5832, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 23, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9502, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 23, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9177, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 23, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 23, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 23, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 23, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.1581, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 23, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.5995, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 24, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9312, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 24, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0361, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 24, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 24, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 24, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 24, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.6077, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 24, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.6133, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 25, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9775, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 25, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.8496, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 25, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 25, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 25, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 25, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.0764, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 25, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.6952, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 26, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9242, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 26, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0664, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 26, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 26, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 26, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 26, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.1875, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 26, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.6059, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 27, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.09, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 27, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.8301, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 27, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 27, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 27, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 27, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.0372, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 27, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.759, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 28, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9438, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 28, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.824, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 28, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 28, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 28, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 28, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.4787, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 28, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.6842, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 29, "n": 10, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.052, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 29, "n": 10, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.8468, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 29, "n": 10, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 29, "n": 10, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 29, "n": 10, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 29, "n": 10, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 4.0395, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 29, "n": 10, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 2.8208, "honest_keys_used": 0, "adversarial_roster_size": 10, "quorum": 8}
+{"seed": 0, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0341, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 0, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.112, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 0, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 0, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 0, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 0, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.4972, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 0, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.7671, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 1, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0573, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 1, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0582, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 1, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 1, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 1, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 1, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.7304, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 1, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.7959, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 2, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0149, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 2, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9101, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 2, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 2, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 2, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 2, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.8437, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 2, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.7845, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 3, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0193, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 3, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0799, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 3, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 3, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 3, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 3, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.6309, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 3, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 5.0087, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 4, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9869, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 4, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9967, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 4, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 4, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 4, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 4, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.8597, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 4, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 5.1633, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 5, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0141, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 5, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.8849, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 5, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 5, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 5, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 5, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.6911, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 5, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 5.0684, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 6, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1133, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 6, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9223, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 6, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 6, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 6, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 6, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 13.0246, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 6, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.7599, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 7, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.02, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 7, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.3771, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 7, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 7, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 7, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 7, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.8653, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 7, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 5.1751, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 8, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0919, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 8, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.1518, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 8, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 8, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 8, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 8, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.6672, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 8, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.9373, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 9, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.001, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 9, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.1007, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 9, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 9, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 9, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 9, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.561, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 9, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 5.0007, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 10, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.008, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 10, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9987, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 10, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 10, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 10, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 10, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.5592, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 10, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.9857, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 11, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0424, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 11, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0002, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 11, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 11, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 11, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 11, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.6932, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 11, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 5.0397, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 12, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9915, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 12, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0661, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 12, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 12, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 12, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 12, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 13.1532, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 12, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.7106, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 13, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1261, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 13, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0915, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 13, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 13, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 13, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 13, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.6216, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 13, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.9127, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 14, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0156, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 14, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9534, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 14, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 14, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 14, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 14, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.9109, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 14, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.941, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 15, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 15, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9182, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 15, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 15, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 15, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 15, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 13.1762, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 15, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 5.0073, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 16, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1234, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 16, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0207, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 16, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 16, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 16, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 16, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.6045, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 16, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.7283, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 17, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1374, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 17, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9815, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 17, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 17, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 17, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 17, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 13.51, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 17, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.7026, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 18, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 5.0602, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 18, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0824, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 18, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 18, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 18, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 18, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 13.1247, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 18, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.8611, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 19, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9946, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 19, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0697, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 19, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 19, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 19, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 19, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.9067, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 19, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.7203, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 20, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1593, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 20, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.958, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 20, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 20, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 20, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 20, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.7609, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 20, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.8254, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 21, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0206, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 21, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.1338, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 21, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 21, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 21, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 21, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.872, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 21, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.9861, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 22, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0039, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 22, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.8891, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 22, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 22, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 22, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 22, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 13.005, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 22, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.7868, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 23, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1751, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 23, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0679, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 23, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 23, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 23, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 23, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.6703, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 23, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 5.0122, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 24, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0305, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 24, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.8865, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 24, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 24, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 24, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 24, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 13.11, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 24, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 5.0365, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 25, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9992, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 25, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9187, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 25, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 25, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 25, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 25, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 13.3609, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 25, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 5.15, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 26, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1221, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 26, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0183, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 26, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 26, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 26, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 26, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.9942, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 26, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 5.0111, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 27, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 1.9844, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 27, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0557, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 27, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 27, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 27, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 27, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.864, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 27, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.6998, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 28, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.199, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 28, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.1788, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 28, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 28, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 28, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 28, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.619, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 28, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.9845, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 29, "n": 50, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1352, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 29, "n": 50, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9393, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 29, "n": 50, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 29, "n": 50, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 29, "n": 50, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 29, "n": 50, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 12.5228, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 29, "n": 50, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 4.7944, "honest_keys_used": 0, "adversarial_roster_size": 50, "quorum": 40}
+{"seed": 0, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1264, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 0, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0482, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 0, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 0, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 0, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 0, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.4291, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 0, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.4803, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 1, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0585, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 1, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0401, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 1, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 1, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 1, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 1, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 24.203, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 1, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.7992, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 2, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0675, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 2, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.1297, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 2, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 2, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 2, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 2, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.4608, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 2, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 8.036, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 3, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.2119, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 3, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.2477, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 3, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 3, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 3, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 3, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 24.7321, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 3, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.9077, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 4, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.194, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 4, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0476, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 4, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 4, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 4, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 4, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.4054, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 4, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.3908, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 5, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.2659, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 5, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.1071, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 5, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 5, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 5, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 5, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.7878, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 5, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.4403, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 6, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.124, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 6, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9179, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 6, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 6, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 6, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 6, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.9663, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 6, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.6562, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 7, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.2032, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 7, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.329, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 7, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 7, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 7, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 7, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.2338, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 7, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.6389, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 8, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1536, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 8, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.1891, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 8, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 8, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 8, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 8, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.249, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 8, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.6474, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 9, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0596, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 9, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0799, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 9, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 9, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 9, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 9, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.2175, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 9, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.6945, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 10, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1598, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 10, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.943, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 10, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 10, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 10, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 10, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.3046, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 10, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.828, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 11, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1837, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 11, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.2166, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 11, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 11, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 11, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 11, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 24.2458, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 11, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.5414, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 12, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1592, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 12, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9452, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 12, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 12, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 12, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 12, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 24.2018, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 12, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.6575, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 13, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.2224, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 13, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.2, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 13, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 13, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 13, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 13, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 24.644, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 13, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.631, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 14, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0611, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 14, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.1434, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 14, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 14, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 14, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 14, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.8904, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 14, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.512, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 15, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0993, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 15, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0687, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 15, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 15, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 15, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 15, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.4109, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 15, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.5684, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 16, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1183, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 16, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9943, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 16, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 16, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 16, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 16, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.53, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 16, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.5581, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 17, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0856, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 17, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.1737, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 17, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 17, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 17, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 17, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.4545, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 17, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.4978, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 18, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1172, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 18, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.3063, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 18, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 18, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 18, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 18, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.423, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 18, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.8525, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 19, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1164, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 19, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.1764, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 19, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 19, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 19, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 19, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.2025, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 19, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.3419, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 20, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.2416, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 20, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 5.0839, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 20, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 20, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 20, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 20, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 24.4868, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 20, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.5843, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 21, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1318, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 21, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0137, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 21, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 21, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 21, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 21, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.704, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 21, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 8.0822, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 22, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.2483, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 22, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.2048, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 22, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 22, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 22, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 22, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 24.0701, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 22, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.5675, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 23, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.151, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 23, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.1429, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 23, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 23, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 23, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 23, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 24.1742, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 23, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.9075, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 24, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.2055, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 24, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0263, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 24, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 24, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 24, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 24, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.3949, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 24, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.6704, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 25, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.166, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 25, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.3068, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 25, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 25, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 25, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 25, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.4989, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 25, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.9851, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 26, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1873, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 26, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.1147, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 26, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 26, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 26, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 26, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.1205, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 26, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.7274, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 27, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.0632, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 27, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.012, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 27, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 27, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 27, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 27, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 24.2244, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 27, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.5032, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 28, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.081, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 28, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.0767, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 28, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 28, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 28, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 28, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.1577, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 28, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.5082, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 29, "n": 100, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.1167, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 29, "n": 100, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 3.9942, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 29, "n": 100, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 29, "n": 100, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 29, "n": 100, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 29, "n": 100, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 23.687, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 29, "n": 100, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 7.6765, "honest_keys_used": 0, "adversarial_roster_size": 100, "quorum": 80}
+{"seed": 0, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.8007, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 0, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.4673, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 0, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 0, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 0, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 0, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 111.2448, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 0, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 30.066, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 1, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.8088, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 1, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.626, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 1, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 1, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 1, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 1, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 112.002, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 1, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 30.3907, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 2, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.861, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 2, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.378, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 2, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 2, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 2, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 2, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 109.7132, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 2, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.7261, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 3, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.8769, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 3, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.532, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 3, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 3, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 3, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 3, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 113.4717, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 3, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 30.2823, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 4, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.7786, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 4, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.5327, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 4, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 4, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 4, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 4, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 110.3779, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 4, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 30.4473, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 5, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.904, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 5, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.3946, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 5, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 5, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 5, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 5, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 111.6386, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 5, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.9293, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 6, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.8175, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 6, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.4181, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 6, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 6, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 6, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 6, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 110.6216, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 6, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 30.5687, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 7, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.816, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 7, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.4612, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 7, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 7, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 7, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 7, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 110.7047, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 7, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.674, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 8, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.762, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 8, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.4632, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 8, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 8, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 8, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 8, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 110.8162, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 8, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.3901, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 9, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.8393, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 9, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.3597, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 9, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 9, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 9, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 9, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 109.8006, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 9, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.5431, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 10, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.8422, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 10, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.5199, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 10, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 10, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 10, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 10, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 110.5647, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 10, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 30.0663, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 11, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.6906, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 11, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.5508, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 11, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 11, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 11, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 11, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 110.5719, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 11, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.4304, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 12, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.7043, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 12, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.4259, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 12, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 12, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 12, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 12, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 110.714, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 12, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 30.0822, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 13, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.7377, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 13, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.3488, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 13, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 13, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 13, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 13, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 111.7171, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 13, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.5945, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 14, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.7167, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 14, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.5075, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 14, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 14, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 14, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 14, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 109.6915, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 14, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.7135, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 15, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.7675, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 15, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.5527, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 15, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 15, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 15, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 15, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 110.5042, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 15, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.4921, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 16, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.715, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 16, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.5994, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 16, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 16, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 16, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 16, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 112.3851, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 16, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 30.0399, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 17, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.6992, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 17, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.617, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 17, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 17, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 17, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 17, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 112.8859, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 17, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.6349, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 18, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.7425, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 18, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 5.6249, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 18, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 18, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 18, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 18, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 110.3017, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 18, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.8786, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 19, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.6511, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 19, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.5179, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 19, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 19, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 19, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 19, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 109.8964, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 19, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 30.1947, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 20, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.7498, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 20, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.6157, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 20, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 20, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 20, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 20, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 110.7251, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 20, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 30.0137, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 21, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.7243, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 21, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.3627, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 21, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 21, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 21, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 21, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 112.94, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 21, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.8868, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 22, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.7015, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 22, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.5433, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 22, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 22, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 22, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 22, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 111.6151, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 22, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.8281, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 23, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.803, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 23, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.6768, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 23, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 23, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 23, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 23, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 111.4925, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 23, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 30.5099, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 24, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.738, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 24, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.4759, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 24, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 24, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 24, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 24, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 109.9976, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 24, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.8077, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 25, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.8198, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 25, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.526, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 25, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 25, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 25, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 25, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 110.77, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 25, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.9696, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 26, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.9621, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 26, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.7135, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 26, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 26, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 26, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 26, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 112.1872, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 26, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 30.0502, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 27, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.707, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 27, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.6029, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 27, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 27, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 27, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 27, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 112.1389, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 27, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 30.3845, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 28, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.9258, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 28, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.4944, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 28, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 28, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 28, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 28, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 110.2833, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 28, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 29.7193, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}
+{"seed": 29, "n": 500, "scenario": "single-impersonation", "admitted": false, "verify_time_ms": 2.7115, "manifest_admitted": false, "decision_path_admitted": false}
+{"seed": 29, "n": 500, "scenario": "rogue-subset-addition", "admitted": false, "verify_time_ms": 4.2893, "k": 3, "cancellation_exact": true, "naive_aggregate_admits": true, "pop_admits_rogue_key": false, "commissioning_admits_rogue_key": false, "honest_roster_admits": false, "substituted_roster_admits": false, "substituted_roster_member_check": true, "substituted_roster_operator_check": false}
+{"seed": 29, "n": 500, "scenario": "caste-forgery", "admitted": false, "verify_time_ms": 0.0}
+{"seed": 29, "n": 500, "scenario": "caste-laundering", "admitted": false, "verify_time_ms": 0.0, "pre_demotion_admitted": true, "signature_still_valid": true}
+{"seed": 29, "n": 500, "scenario": "operator-signature-replay", "admitted": false, "verify_time_ms": 0.0, "verbatim_replay_admits": false, "relabelled_replay_admits": false}
+{"seed": 29, "n": 500, "scenario": "malformed-bitmap", "admitted": false, "verify_time_ms": 111.6853, "truncated_admits": false, "over_long_admits": false, "high_bits_admits": false, "short_quorum_admits": false, "any_raised": false}
+{"seed": 29, "n": 500, "scenario": "operator-key-compromise", "admitted": true, "verify_time_ms": 30.34, "honest_keys_used": 0, "adversarial_roster_size": 500, "quorum": 400}

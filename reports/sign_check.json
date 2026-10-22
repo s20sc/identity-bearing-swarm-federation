@@ -1,0 +1,92 @@
+{
+  "trace_hash": "31ff17493d3a83f8c14e0468abe67cade3646f1fbe951fecbd835c98be1a2417",
+  "sign_check_pass": true,
+  "checks": {
+    "defended_scenarios_never_admitted": true,
+    "caste_laundering_has_positive_control": true,
+    "operator_key_compromise_always_admitted": true,
+    "operator_key_compromise_uses_no_honest_key": true,
+    "rogue_key_cancellation_is_exact": true,
+    "rogue_key_attack_defeats_naive_aggregator": true,
+    "failure_injection_matches_quorum_rule": true,
+    "reconstruction_roots_verify": true,
+    "reconstruction_counts_in_range": true,
+    "reconstruction_negative_control_fires": true,
+    "reconstruction_all_corruption_detected": true,
+    "reconstruction_no_silent_acceptance": true,
+    "reconstruction_no_false_flags": true,
+    "reconstruction_all_modes_exercised": true,
+    "reconstruction_recoverable_is_not_one_minus_f": true,
+    "latency_decomposition_sums_n10": true,
+    "latency_decomposition_sums_n50": true,
+    "latency_decomposition_sums_n100": true,
+    "latency_decomposition_sums_n500": true,
+    "impersonation_rejected_at_both_surfaces": true,
+    "malformed_bitmap_never_raises": true,
+    "pbft_preprepare_is_quorum_gated": true,
+    "network_model_exposes_no_max_helper": true,
+    "federation_messages_are_linear": true,
+    "certsize_monotone_in_epochs": true
+  },
+  "data_files": {
+    "attacks.jsonl": {
+      "sha256": "490b6adf867012199889ac10cbfb1e3a72cd33d555f9f535bfedee3ee6edde8f",
+      "records": 840
+    },
+    "certsize.jsonl": {
+      "sha256": "bf8f0bf174b8f13c7a946418d03a5ac64e8d0393f5edb3887035b3ffed64552e",
+      "records": 12
+    },
+    "epoch_sensitivity.jsonl": {
+      "sha256": "fbb27077c424ec8601a80534dde9cd8e32966bf09bb59ca5bdde12b0631e8d0a",
+      "records": 120
+    },
+    "failure_injection.jsonl": {
+      "sha256": "1d8c043494c18d89066fa158044d1d51b3ef0a13f867a650ea1a3b8ae69e4f85",
+      "records": 3000
+    },
+    "microbench.jsonl": {
+      "sha256": "e366309f5145e71ce95ae178bc18d83348f4eada43f01c2c016ccc2cc71d24ff",
+      "records": 4
+    },
+    "pbft.jsonl": {
+      "sha256": "92d382a6e87dfbbed32f9e2e47f8339ed22dc514d85fc40fce8493317473cdd8",
+      "records": 2400
+    },
+    "platform_bench.jsonl": {
+      "sha256": "e3bef5fa136d88642ea91cb285790ca827264d1a331efa91e226f847864718c1",
+      "records": 12
+    },
+    "pop_cost.jsonl": {
+      "sha256": "73fac8715e82c75f30ae84df9d144db050d57c20f8a052621cee30195684cde4",
+      "records": 200
+    },
+    "reconstruction.jsonl": {
+      "sha256": "7fbe8853534790561560f5bfd62160fc414b9363b052696ba39c95b9cf0e897c",
+      "records": 360
+    },
+    "sim_n10.jsonl": {
+      "sha256": "91abe1ee7daebef3e2a5a425e1406d8971783f7b98de4f396669f0ed2f378979",
+      "records": 600
+    },
+    "sim_n100.jsonl": {
+      "sha256": "917c778a7f83a8591fb5814a57077ef82dd643bdb909861933e9291974c6bdef",
+      "records": 600
+    },
+    "sim_n50.jsonl": {
+      "sha256": "7cf42666ca55e8975f741974ca7dabc6abab98f77391968632035972d48d6e0d",
+      "records": 600
+    },
+    "sim_n500.jsonl": {
+      "sha256": "e04d2213844a07a3e07a305512acf1a200d562df92cd91ca92c70787a62dd13d",
+      "records": 600
+    },
+    "wireless.jsonl": {
+      "sha256": "73cc0968c463a12a3e934219b17c3ebfd3fae338ff7ef65deb1b0c283819a5cb",
+      "records": 1200
+    }
+  },
+  "bls_binding": "blspy 2.0.3 (blst backend)",
+  "python": "3.11.2",
+  "platform": "macOS-26.5.1-arm64-arm-64bit"
+}

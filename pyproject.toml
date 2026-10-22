@@ -1,0 +1,18 @@
+[project]
+name = "ibsf"
+version = "0.1.0"
+description = "Identity-bearing swarm federation: reference implementation"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "blspy>=2.0.3",
+    "numpy>=1.26",
+    "scipy>=1.12",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["ibsf"]

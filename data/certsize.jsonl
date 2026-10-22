@@ -1,0 +1,12 @@
+{"n": 10, "k": 1, "root_level_bytes": 1000, "full_doc_bytes": 3712, "regulator_verify_ms": 3.291}
+{"n": 10, "k": 10, "root_level_bytes": 5491, "full_doc_bytes": 8203, "regulator_verify_ms": 13.334}
+{"n": 10, "k": 100, "root_level_bytes": 50660, "full_doc_bytes": 53372, "regulator_verify_ms": 108.922}
+{"n": 10, "k": 1000, "root_level_bytes": 505029, "full_doc_bytes": 507741, "regulator_verify_ms": 1053.186}
+{"n": 100, "k": 1, "root_level_bytes": 1000, "full_doc_bytes": 24683, "regulator_verify_ms": 3.424}
+{"n": 100, "k": 10, "root_level_bytes": 5491, "full_doc_bytes": 29174, "regulator_verify_ms": 12.634}
+{"n": 100, "k": 100, "root_level_bytes": 50660, "full_doc_bytes": 74343, "regulator_verify_ms": 107.082}
+{"n": 100, "k": 1000, "root_level_bytes": 505029, "full_doc_bytes": 528712, "regulator_verify_ms": 1183.312}
+{"n": 500, "k": 1, "root_level_bytes": 1000, "full_doc_bytes": 117884, "regulator_verify_ms": 3.248}
+{"n": 500, "k": 10, "root_level_bytes": 5491, "full_doc_bytes": 122375, "regulator_verify_ms": 12.714}
+{"n": 500, "k": 100, "root_level_bytes": 50660, "full_doc_bytes": 167544, "regulator_verify_ms": 106.845}
+{"n": 500, "k": 1000, "root_level_bytes": 505029, "full_doc_bytes": 621913, "regulator_verify_ms": 1051.604}

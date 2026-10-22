@@ -1,0 +1,92 @@
+{
+  "host": {
+    "label": "aliyun-arm64",
+    "cpu": "unknown",
+    "machine": "aarch64",
+    "platform": "Linux-5.15.0-186-generic-aarch64-with-glibc2.35",
+    "python": "3.10.12",
+    "cores": 2
+  },
+  "results": [
+    {
+      "operation": "member_sign",
+      "n": null,
+      "median_ms": 0.4477,
+      "p95_ms": 0.465,
+      "min_ms": 0.4471,
+      "reps": 200
+    },
+    {
+      "operation": "single_verify",
+      "n": null,
+      "median_ms": 1.4183,
+      "p95_ms": 1.4326,
+      "min_ms": 1.4137,
+      "reps": 200
+    },
+    {
+      "operation": "pop_prove",
+      "n": null,
+      "median_ms": 0.4475,
+      "p95_ms": 0.4532,
+      "min_ms": 0.4471,
+      "reps": 200
+    },
+    {
+      "operation": "pop_verify",
+      "n": null,
+      "median_ms": 1.4174,
+      "p95_ms": 1.4231,
+      "min_ms": 1.4135,
+      "reps": 200
+    },
+    {
+      "operation": "aggregate",
+      "n": 10,
+      "median_ms": 0.024,
+      "p95_ms": 0.0242,
+      "min_ms": 0.0239,
+      "reps": 30
+    },
+    {
+      "operation": "fast_aggregate_verify",
+      "n": 10,
+      "median_ms": 1.4347,
+      "p95_ms": 1.4408,
+      "min_ms": 1.4301,
+      "reps": 30
+    },
+    {
+      "operation": "aggregate",
+      "n": 100,
+      "median_ms": 0.2329,
+      "p95_ms": 0.24,
+      "min_ms": 0.2328,
+      "reps": 30
+    },
+    {
+      "operation": "fast_aggregate_verify",
+      "n": 100,
+      "median_ms": 1.5162,
+      "p95_ms": 1.5237,
+      "min_ms": 1.5106,
+      "reps": 30
+    },
+    {
+      "operation": "aggregate",
+      "n": 500,
+      "median_ms": 1.1688,
+      "p95_ms": 1.1757,
+      "min_ms": 1.1617,
+      "reps": 30
+    },
+    {
+      "operation": "fast_aggregate_verify",
+      "n": 500,
+      "median_ms": 1.8726,
+      "p95_ms": 1.882,
+      "min_ms": 1.8673,
+      "reps": 30
+    }
+  ]
+}
