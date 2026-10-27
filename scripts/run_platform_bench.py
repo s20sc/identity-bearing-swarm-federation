@@ -1,23 +1,16 @@
-"""Per-operation cryptographic cost on the host it is run on.
+"""Measure per-operation cryptographic cost on the current host.
 
-The evaluation's end-to-end latencies were measured on a desktop-class
-Arm64 machine. A reviewer of a robotics venue is entitled to ask what
-they become on a robot, because the answer is not a rescaling of one
-number: the protocol's cost is dominated by pairing-based verification
-at the operator and by a single hash-to-curve signature per member, and
-those two scale differently across platforms.
+The end-to-end evaluation uses a desktop-class Arm64 machine. Member
+signing and operator pairing-based verification may scale differently
+on other processors, so measure these primitives separately.
 
-This script measures the primitives in isolation so the same file can be
-run on a workstation and on an onboard computer and the two compared
-directly. It deliberately does NOT run the fleet simulation: transport
-is simulated either way, so re-running it on other hardware would mix a
-real difference (crypto) with an unchanged model (network) and blur the
-comparison.
+Run this script on each comparison host. It does not run the fleet
+simulation: simulated transport would not change across hosts and
+would obscure the difference in cryptographic execution cost.
 
-Emits data/platform_bench.jsonl, one record per operation, plus a
-platform block identifying the host.
+Emit data/platform_bench.jsonl with one record per operation and host
+metadata. Example labels describe the host being measured:
 
-Run on each platform:
     python3 scripts/run_platform_bench.py --label "workstation"
     python3 scripts/run_platform_bench.py --label "jetson-orin"
 """

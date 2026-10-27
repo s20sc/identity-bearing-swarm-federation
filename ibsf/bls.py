@@ -63,19 +63,11 @@ def key_list_digest(
 ) -> bytes:
     """Digest binding an epoch to its ordered key list and quorum threshold.
 
-    Recomputed independently by the verifier, so a prover cannot present
-    a different key list than the one the operator signed for the epoch.
-
-    The quorum threshold is inside the digest, which is what makes it the
-    operator's policy rather than a constant every party has to be told
-    out of band. An earlier revision left `t` a caller-supplied argument
-    to `verify_subset` and a module-level constant everywhere else, so an
-    operator had no way to require a larger quorum for a hazardous action
-    and a verifier had nothing signed to check its own threshold against:
-    whatever `t` the caller passed was the `t` that was enforced. Binding
-    it here means a decision formed under one threshold cannot be
-    verified under another, because the recomputed aux differs and the
-    operator countersignature fails.
+    The verifier recomputes the digest from the epoch, key list and quorum
+    threshold. Binding the threshold authenticates the operator's policy:
+    a decision formed under one threshold cannot verify under another,
+    because the recomputed auxiliary digest differs and the operator
+    countersignature fails. The threshold is not an out-of-band constant.
     """
     body = b"".join(bytes(pk) for pk in roster_pks)
     return sha256(

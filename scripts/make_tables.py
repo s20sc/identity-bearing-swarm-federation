@@ -25,11 +25,8 @@ FLEET_SIZES = (10, 50, 100, 500)
 ATTACK_ROWS = (
     ("single-impersonation", "Single-robot impersonation"),
     ("rogue-subset-addition", "Rogue key, cancellation form"),
-    # Two caste rows, not one. The first is a signature-path control and
-    # its label now says so; an earlier revision ran only that scenario
-    # under the name "Caste-laundering attempt", which read as evidence
-    # for a property it never exercised. The second is the real vector:
-    # a genuinely issued certificate replayed after demotion.
+    # The first caste scenario controls signature verification. The second
+    # replays a genuinely issued certificate after demotion.
     ("caste-forgery", "Caste certificate, unauthorised issuer"),
     ("caste-laundering", "Caste replay after demotion"),
     ("operator-signature-replay", "Operator-signature replay"),
@@ -281,10 +278,7 @@ def table_recon(summary: dict) -> None:
             # emitted fragment can be compared to the typeset table
             # character for character. Detection rate and proof timing
             # are reported in prose and in summary.json rather than
-            # crammed into the cell; an earlier format disagreed with the
-            # paper's, which left the table hand-transcribed and made the
-            # "every table regenerates" claim true of the numbers but not
-            # of the tables.
+            # added to the cell, preserving the table's stated format.
             ev_lo = min(r["events_recoverable"] for r in sub)
             ev_hi = max(r["events_recoverable"] for r in sub)
             cells.append(f"{ev:.2f} [{ev_lo:.2f}, {ev_hi:.2f}]")
@@ -469,13 +463,9 @@ def platform_probe(summary: dict) -> None:
     summary["platform_probe"] = out
     logger.info("platform probe: %d platform(s)", len(loaded))
 
-    # Emit the manuscript table fragment. Table IX was the one hand-typed
-    # table in the paper, and it drifted: six of eight cells and every
-    # ratio disagreed with this summary, because the ratios had been
-    # computed by dividing the rounded table figures rather than the raw
-    # medians. Emitting it here removes the opportunity. Each ratio is
-    # computed from full-precision medians and only then rounded, so it
-    # cannot disagree with the cells above it by a rounding step.
+    # Emit the platform table from the same measurements as the summary.
+    # Compute ratios from full-precision medians before display rounding;
+    # dividing rounded table cells can introduce inconsistent ratios.
     non_ref = [k for k in loaded if k != ref_label]
     if len(non_ref) == 1:
         other = non_ref[0]
@@ -523,16 +513,12 @@ def microbench(summary: dict) -> None:
 
 
 def source_size(summary: dict) -> None:
-    """Source-size counts quoted in the implementation paragraph.
+    """Count source lines for the manuscript implementation description.
 
-    The manuscript quotes kLOC figures that move whenever the code does,
-    and they moved twice in one review round without anyone noticing,
-    because they lived only in prose. Counting them here puts them under
-    the same gate as every other reported number.
-
-    "Statements only" means physical lines that are not blank, not
-    comment-only, and not part of a module/class/function docstring,
-    which is the definition the manuscript states.
+    Report both total physical lines and statement-only lines. Statement
+    counts exclude blank lines, comment-only lines and module, class or
+    function docstrings. The manuscript-number gate checks these reported
+    counts alongside other declared quantities.
     """
     import io
     import tokenize
@@ -620,9 +606,8 @@ def _invariants() -> dict[str, bool]:
     )
     # The laundering row is only evidence if the replayed certificate was
     # admissible before the demotion and its signature is still valid
-    # afterwards. Without both, a zero admission rate would be consistent
-    # with the scenario simply failing to construct a valid certificate --
-    # which is exactly what the previous version of this row did.
+    # afterwards. Without both controls, zero admission could result from
+    # failure to construct a valid certificate rather than correct rejection.
     # run_attacks flattens AttackResult.detail into each record, so the
     # control fields sit at the top level, not under a "detail" key.
     laundering = [r for r in attacks if r["scenario"] == "caste-laundering"]
@@ -761,14 +746,10 @@ def _invariants() -> dict[str, bool]:
         r.get("any_raised") is False for r in malformed
     )
 
-    # Both protocols must be timed at a quorum order statistic. Timing any
-    # round by its slowest link makes that protocol's latency grow with N
-    # for a reason the protocol does not have, which is how an earlier
-    # revision of this baseline manufactured a PBFT tail. The check
-    # recomputes the pre-prepare round analytically from the same seed and
-    # confirms it is the quorum-th order statistic and strictly below the
-    # maximum, so a reintroduced max-gate fails here rather than silently
-    # improving our comparison.
+    # Time protocol progression at quorum receipt, not the slowest link.
+    # Recompute the pre-prepare delay from the same seeded draws and require
+    # quorum-1 follower receipts, since the leader counts toward quorum.
+    # For this seed, also check that quorum delay is below the maximum.
     from ibsf import pbft as _pbft
     from ibsf.network import NetworkModel as _NM
 
@@ -777,11 +758,8 @@ def _invariants() -> dict[str, bool]:
     _quorum = 2 * ((_n - 1) // 3) + 1
     _r1 = _pbft._broadcast_quorum_ms(_net, np.random.default_rng(12345), _n, _quorum)
     _draws = np.sort(_net.one_way(np.random.default_rng(12345), _n - 1))
-    # The leader holds the pre-prepare at time zero and counts toward the
-    # quorum, so the round waits for quorum-1 FOLLOWER receipts. This
-    # index must track ibsf/pbft.py: an earlier revision changed the code
-    # and left this check asserting the old semantics, so the gate failed
-    # on a tree whose model was correct.
+    # The leader holds the pre-prepare at time zero and counts toward quorum.
+    # Use quorum-1 follower receipts, matching ibsf/pbft.py.
     _followers = min(_quorum - 1, _n - 1)
     checks["pbft_preprepare_is_quorum_gated"] = (
         abs(_r1 - float(_draws[_followers - 1])) < 1e-9

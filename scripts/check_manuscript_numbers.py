@@ -1,29 +1,13 @@
-"""Reconcile the manuscript's quoted numbers against the artifact.
+"""Check declared manuscript quantities against generated reports.
 
-The appendix promises that every reported number regenerates from the
-emitted traces. Keeping that true by hand did not work: one review round
-found four disagreements, the next found nine, two of which were the
-manuscript contradicting itself. Every one was a stale digit left behind
-when a re-run moved a value, and none was caught by compiling, by the
-tests, or by the sign check, because none of those reads the prose.
+Each quantity pairs a manuscript pattern with its expected value from
+summary.json. The checks cover selected table entries and running prose,
+including their rounding rules. Quantities not declared here are not
+checked. Compilation and experiment tests alone do not validate prose.
 
-This script closes that gap. It declares each quoted quantity once, next
-to the summary.json path it must equal, and fails if the manuscript and
-the artifact have drifted. Run it before every compile that will be
-shown to anyone.
+    python3 scripts/check_manuscript_numbers.py /path/to/manuscript.tex
 
-A third round found nine more, and they are the reason the declarations
-below now reach into running prose rather than stopping at tables. All
-nine sat outside the gate, so it reported all-clear while the paper
-disagreed with the artifact; all nine were also TRUNCATED rather than
-rounded (0.1773 quoted as 0.17), which is a mistake a human makes
-silently and repeatedly. The lesson is that the gate's scope is the
-thing to check, not its verdict: a number that is not declared here is
-not checked, however green the output looks.
-
-    python3 scripts/check_manuscript_numbers.py ../../paper_source/paper16_v9_main.tex
-
-Exit status is 1 on any mismatch, so it can gate a build.
+Exit status is 1 on any mismatch, allowing use as a build gate.
 """
 
 from __future__ import annotations
@@ -104,10 +88,8 @@ def checks(s: dict) -> list[tuple[str, str, str]]:
     out.append(("cert root k=1000 (kB)", str(round(root_1000 / 1000)),
                 r"1000-epoch root is ([\d]+)\\,kB"))
 
-    # Table VIII cert-size row, byte-exact. This table went stale after a
-    # re-run (root structure changed by 90 bytes/cell) and slipped through
-    # because nothing gated it; the checker now does. The three N rows are
-    # identical (the root has no per-member field), so one row is checked.
+    # Check the certificate-size table byte-exactly. The three fleet-size
+    # rows share the same root size because roots have no per-member field.
     def _grp(n):  # LaTeX-grouped thousands, e.g. 50{,}660
         return f"{n:,}".replace(",", "{,}")
     cz = s["certsize"]
@@ -121,8 +103,8 @@ def checks(s: dict) -> list[tuple[str, str, str]]:
                 r"\$N\{=\}10\$\s*&\s*(" + re.escape(first_col)
                 + r"\s*&[^\\]+?)\\\\"))
 
-    # Full-document sizes (root chain + deduplicated roster) at both
-    # extremes, in kB. The N=500 value was 34 kB stale after the re-run.
+    # Full-document sizes, including root chain and deduplicated roster,
+    # at the two fleet-size extremes in kB.
     fd10 = round(cz["n10/k1000"]["full_doc_bytes"] / 1000)
     fd500 = round(cz["n500/k1000"]["full_doc_bytes"] / 1000)
     out.append(("full-doc N=10 (kB)", str(fd10),
@@ -132,17 +114,14 @@ def checks(s: dict) -> list[tuple[str, str, str]]:
 
     # The charge-both accounting prints the federation medians again; they
     # must equal the as-reported medians (charging both leaves the
-    # federation unchanged). An earlier copy read 10.9 where Table IV read
-    # 11.1, so the paper contradicted itself. Gate it against Table IV.
+    # federation unchanged). Check both occurrences against the same data.
     out.append(("charge-both federation row",
                 ", ".join(rounded(x["median_ms"], 1) for x in fed[:3])
                 + " and " + rounded(fed[3]["median_ms"], 1),
                 r"against the federation's\s*\n?"
                 r"([\d.]+, [\d.]+, [\d.]+ and [\d.]+)\\,ms"))
 
-    # The three scheduling accountings. Two of them were once prose
-    # arithmetic with nothing behind them; make_tables now emits all
-    # three, so the paper and the artifact can be held together here.
+    # Check all three scheduling accountings against make_tables output.
     acc = s.get("scheduling_accountings", {}).get("per_fleet_size", {})
     if acc:
         bare = [acc[f"n{n}"]["federation_without_scheduling_ms"]
@@ -157,9 +136,7 @@ def checks(s: dict) -> list[tuple[str, str, str]]:
                     + " and " + rounded(withl[3], 1),
                     r"puts PBFT at ([\d.]+, [\d.]+, [\d.]+\s*\n?and [\d.]+)\\,ms"))
 
-    # The extrapolation in VIII-F. Checked because the figure quoted
-    # there was once produced by arithmetic done in prose rather than
-    # from the decomposition, and came out four times too small.
+    # Check the VIII-F extrapolation from the measured cost decomposition.
     c = s["latency"]["n500"]["components_median_ms"]
     crypto = (c["member_sign_ms"] + c["aggregate_ms"]
               + c["countersign_ms"] + c["verify_ms"])
@@ -181,11 +158,8 @@ def checks(s: dict) -> list[tuple[str, str, str]]:
                 f"{s['latency']['n500']['messages']:,}".replace(",", "{,}"),
                 r"\$2N\{\+\}t \\leq 3N\$ \(([\d{},]+) at \$N\{=\}500\$\)"))
 
-    # Platform table (VIII-F) and its slowdown band. This table was the one
-    # hand-typed table in the paper and it went stale twice: once because
-    # ratios were divided from rounded cells, and once because a re-run
-    # moved the workstation medians and the manuscript copy was not
-    # refreshed. It is checked here so a third recurrence fails the gate.
+    # Check the platform table and its slowdown band using unrounded
+    # measurements from the generated summary, then apply display rounding.
     pp = s.get("platform_probe", {})
     plats = pp.get("platforms", {})
     ref_label = pp.get("reference")
@@ -253,9 +227,7 @@ def checks(s: dict) -> list[tuple[str, str, str]]:
             out.append((f"VIII-G liveness median {label}",
                         rounded(fi[f"{n}/{c}"]["median_ms"], 1), pat))
 
-    # Source-size counts. These lived only in prose and went stale twice
-    # in one round as the code grew; they are emitted now, so they are
-    # declared here too.
+    # Check source-size counts reported in the manuscript prose.
     src = s.get("source_size")
     if src:
         def kloc(n):

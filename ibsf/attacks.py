@@ -295,15 +295,11 @@ def rogue_subset_addition(fleet: Fleet, seed: int, k: int = 3) -> AttackResult:
 def caste_forgery(fleet: Fleet, seed: int) -> AttackResult:
     """An unauthorised issuer signs a caste certificate.
 
-    Named for what it tests. The adversary holds no operator key, so it
-    creates its own and signs itself a `supervisor` certificate; the
-    honest operator's public key does not verify that signature. This is
-    a positive control on the signature path and nothing more: rejection
-    follows from BLS verification alone and would hold for any scheme.
-    An earlier revision ran exactly this scenario under the name
-    "caste-laundering", which made a table row read as evidence for a
-    property the experiment never exercised. Laundering is the separate
-    scenario below.
+    The adversary generates its own key and signs a supervisor certificate.
+    The honest operator's public key does not verify that signature. This is
+    a positive control for BLS signature verification, not evidence about
+    replay of genuinely issued caste certificates. The caste-laundering
+    scenario below tests replay after demotion.
     """
     robot = fleet.robots[seed % len(fleet.robots)]
     forged = Operator.create(f"forged/{seed}".encode())  # adversary's own key

@@ -2,7 +2,29 @@
 
 Reference implementation and evaluation harness for the paper
 *Identity-Bearing Swarm Federation: Operator-Anchored Cryptographic
-Governance for Heterogeneous Multi-Robot Fleets* (prepared for submission).
+Governance for Heterogeneous Multi-Robot Fleets*.
+
+## Archive and source versions
+
+The version 1.0.0 code and data archive is available at
+[Zenodo, DOI: 10.5281/zenodo.23551524](https://doi.org/10.5281/zenodo.23551524).
+Use this fixed archive when referring to the archived release. The GitHub
+`main` branch may contain later documentation updates.
+
+The 27 October 2026 documentation update changes explanatory text, comments
+and docstrings without changing executable statements, trial data or saved
+reports. The files in `data/` and `reports/` remain the archived evaluation
+outputs; they have not been regenerated for this update.
+
+`reports/summary.json` retains the source-size measurements recorded with the
+original evaluation: 4,602 statement lines and 7,525 total physical lines.
+The current checkout contains 4,663 statement lines (1,611 core, 2,493 harness,
+559 tests) and 7,368 total physical lines, measured using `source_size()` in
+`scripts/make_tables.py`. The statement-count difference already existed
+before this documentation update, following additions to the portable runner
+and its tests. The documentation cleanup changes physical line counts only.
+Regenerating reports measures the checked-out source version; record its Git
+commit when comparing those counts with the frozen evaluation reports.
 
 ## What is here
 
@@ -57,8 +79,8 @@ construction are handled explicitly.
   probability `f`, so the number affected is Binomial(N, f) rather than
   a fixed `ceil(f*N)`. With a fixed count the recovered fraction is
   exactly `1-f` in every trial and the confidence interval collapses to
-  a point: that is arithmetic presented as a measurement, and a sign
-  check now fails if the variance returns to zero. Corruption is
+  a point. A report invariant requires nonzero variance for the sampled
+  corruption settings. Corruption is
   destructive and takes one of three modes, drawn uniformly:
   `total_loss` (chain erased), `tail_truncation` (random non-empty
   suffix erased), `interior_tamper` (one event's payload mutated in
@@ -102,7 +124,7 @@ python scripts/run_all.py                 # whole suite in one pass, then report
 ```
 
 By default, `run_all.py` skips the manuscript-number gate: this standalone
-artifact does not include or require a private manuscript directory. To also
+artifact does not require a manuscript file. To also
 check a local TeX manuscript against the regenerated reports, supply its path:
 
 ```bash
@@ -206,8 +228,10 @@ and catching that needs a freshness anchor outside the certificate.
 
 ## Cite
 
-A citation entry will be added here once the paper has an archival
-reference. Until then, cite the repository.
+For the archived code and data, cite
+[Identity-Bearing Swarm Federation, version 1.0.0](https://doi.org/10.5281/zenodo.23551524).
+For changes on GitHub, also record the exact commit used. A paper citation
+will be added when a published reference is available.
 
 ## License
 

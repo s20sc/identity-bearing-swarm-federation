@@ -79,16 +79,13 @@ class IdentityManifest:
 class CasteCertificate:
     """Operator-issued caste assignment, separate from identity hash.
 
-    The signature authenticates *issuance*: this operator did assign this
-    caste to this key at this time. It does not by itself authenticate
-    *currency*, because a certificate the operator later supersedes stays
-    validly signed forever. Freshness comes from the epoch roster, which
-    carries a per-member caste digest the operator re-signs each epoch;
-    `Operator.verify_caste` checks the certificate against that roster
-    rather than against the signature alone. An earlier revision checked
-    only the signature, so a robot demoted from `supervisor` to
-    `observer` could present its old, genuinely signed `supervisor`
-    certificate indefinitely.
+    The signature authenticates issuance: the operator assigned this caste
+    to this key at this time. A superseded certificate remains validly
+    signed, so freshness additionally requires the current epoch roster.
+    The roster binds a per-member caste digest, re-signed each epoch.
+    Operator.verify_caste validates the roster's signature and epoch before
+    comparing the certificate with that digest. An issuance-only check
+    would allow a demoted member to replay its old supervisor certificate.
     """
 
     robot_pk: bytes        # 48-byte member public key

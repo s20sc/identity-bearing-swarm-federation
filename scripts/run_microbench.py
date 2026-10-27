@@ -1,13 +1,8 @@
-"""Per-operation micro-costs quoted in the latency decomposition.
+"""Measure micro-costs used in the latency decomposition.
 
-The paper attributes part of the verification cost to two operations
-that a deployment would amortise: recomputing the key-list digest on every
-decision, and recounting distinct participant keys. Those two figures
-were previously quoted from an ad-hoc measurement with nothing in the
-artifact behind them, which is exactly the unverifiable-number problem
-the rest of this harness exists to avoid. This script emits them.
-
-Emits data/microbench.jsonl.
+Emit timings for key-list digest recomputation and distinct-participant
+counting, two operations that a deployment can amortise. Store the
+measurements in data/microbench.jsonl for report regeneration.
 """
 
 from __future__ import annotations

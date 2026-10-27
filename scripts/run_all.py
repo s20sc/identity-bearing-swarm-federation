@@ -1,23 +1,12 @@
-"""Run every experiment back-to-back, then regenerate all of reports/.
+"""Run all experiments sequentially, then regenerate reports.
 
-Two problems this solves, both of which bit an earlier revision.
+Real BLS and HMAC wall-clock measurements vary with machine load. Run
+the suite in one session to reduce differences in measurement conditions
+across tables. Scheduling jitter is measured and gated; both jitter and
+load are recorded so the conditions remain inspectable.
 
-First, the reported wall-clock times are measured on real BLS and HMAC
-operations, so they move with whatever else the machine is doing. Running
-the latency experiments on different occasions makes tables that describe
-the same construction disagree: one earlier pair of runs differed by 20%
-on an identical 400-key aggregate verification purely because the second
-was taken under load. Running the whole suite in one pass puts every
-timing in the paper under one machine state.
-
-Second, `reports/` is derived from `data/`, and regenerating part of
-`data/` without re-running `make_tables.py` leaves summary.json and
-sign_check.json describing traces that are no longer shipped. Making the
-full sequence one command removes the opportunity for that skew.
-
-The run gates on measured scheduling jitter rather than on load average
-and records both, so a reader can see the conditions the timings were
-taken under rather than having to trust that the machine was quiet.
+Rebuild reports from the newly emitted data in the same invocation to
+keep summary.json and sign_check.json consistent with the trial logs.
 """
 
 from __future__ import annotations
@@ -106,16 +95,11 @@ WAIT_POLL_S = 30
 
 
 def _scheduling_jitter() -> float:
-    """Ratio p95/median over a fixed, single-threaded crypto probe.
+    """Measure p95/median over a fixed single-threaded cryptographic probe.
 
-    An earlier revision gated on the 1-minute load average, which is the
-    wrong instrument for this workload: load average counts threads in
-    wait states, so a desktop machine can report 35 while leaving four
-    cores idle, and a single-threaded benchmark on it is not starved at
-    all. Gating on load would block runs whose numbers are fine and would
-    still not detect the actual hazard, which is this process being
-    descheduled mid-measurement. Timing a fixed operation repeatedly and
-    looking at the spread measures that hazard directly.
+    Load average includes threads in wait states and is not a direct measure
+    of this process's scheduling interference. Repeated operation timings
+    measure the spread relevant to wall-clock cryptographic benchmarks.
     """
     from ibsf import bls                     # local: keeps import cost off
     from ibsf.federation import Fleet        # the fast path
@@ -137,14 +121,10 @@ def _scheduling_jitter() -> float:
 
 
 def _await_stable_machine() -> tuple[list[float], float]:
-    """Block until scheduling jitter is low enough to time crypto.
+    """Wait for scheduling jitter to meet the measurement threshold.
 
-    Warning and proceeding was not enough: a prior run emitted a warning,
-    completed anyway, and its numbers reached a manuscript, where a
-    reviewer correctly observed that the artifact's own guardrail had
-    declared them unquotable. A guardrail the standard path walks past is
-    decoration. This one blocks, and aborts rather than producing timings
-    it has already called untrustworthy.
+    Abort if the threshold cannot be met, rather than producing benchmark
+    timings after the measurement-condition gate has failed.
     """
     jitter = _scheduling_jitter()
     if jitter <= JITTER_CEILING:

@@ -1,17 +1,9 @@
-"""Regression tests for the security properties the paper claims.
+"""Regression tests for the manuscript's security properties.
 
-These are deliberately property-shaped rather than coverage-shaped. Each
-test names a claim made in the paper and tries to break it, and every
-rejection test is paired with a positive control, because a verifier that
-rejects everything passes every negative test while being useless.
-
-Several of these encode defects that were live at some point in this
-implementation's history and were caught by review rather than by the
-code: a participant bitmap short enough to index past its buffer, a
-quorum satisfied by one member repeated across slots, an epoch root that
-could be dropped from an exported certificate without detection, and an
-identity manifest that no code path ever checked. They are tests so that
-those specific regressions fail here instead of in a reviewer's report.
+Tests pair rejection cases with positive controls so rejecting every
+input cannot satisfy the suite. Coverage includes malformed bitmaps,
+repeated signers, epoch omission, manifest admission, capability and
+caste claims, and operator-signed quorum policies.
 """
 
 from __future__ import annotations
@@ -249,13 +241,10 @@ def test_stale_roster_does_not_admit_a_removed_member(fleet: Fleet) -> None:
 def test_identity_hash_is_byte_stable_across_caste_change(
     fleet: Fleet,
 ) -> None:
-    """Property 1, the abstract's headline, previously had no test at all.
+    """Identity remains stable across successive caste assignments.
 
-    The only test touching `identity_hash` asserted the OPPOSITE
-    direction (capability injectivity), so a change folding caste into
-    the hash -- which Section IV itself discusses as a design alternative
-    -- would have passed the whole suite. Here one robot receives k
-    successive caste assignments and the hash must not move by a byte.
+    Property 1 excludes caste from identity_hash. Assign one robot multiple
+    castes and require its identity hash to remain byte-identical.
     """
     op = fleet.operator
     robot = fleet.robots[0]
@@ -270,14 +259,11 @@ def test_identity_hash_is_byte_stable_across_caste_change(
 
 
 def test_superseded_caste_certificate_is_refused(fleet: Fleet) -> None:
-    """The demotion case: genuine signature, stale claim.
+    """Reject a genuinely issued caste certificate after demotion.
 
-    No forgery here. The operator really did issue this certificate, and
-    its signature still verifies at the end of the test. What changed is
-    the roster: the next epoch declares the robot an `observer`, so the
-    `supervisor` claim no longer matches the caste in force. An
-    issuance-only check cannot tell the two apart, which is why an
-    earlier revision accepted this indefinitely.
+    The old supervisor certificate remains validly signed, but the next
+    epoch roster assigns observer. The test requires the current roster to
+    control admission; an issuance-only check cannot establish currency.
     """
     op = fleet.operator
     robot = fleet.robots[0]
@@ -306,15 +292,11 @@ def test_superseded_caste_certificate_is_refused(fleet: Fleet) -> None:
 
 
 def test_authorised_decision_enters_the_audit_chain() -> None:
-    """Algorithm 1 says the tuple is appended to the audit chain.
+    """An authorised decision appends exactly one signed audit event.
 
-    The regulator-facing guarantees rest on an authorised fleet decision
-    being present in the record the compliance certificate aggregates. An
-    earlier revision verified the tuple and returned it without appending
-    anything, so a hazardous decision left every chain empty and could not
-    be forensically audited. This checks that an authorised decision adds
-    exactly one signed fleet-decision event, and a rejected one adds
-    nothing.
+    The compliance certificate aggregates recorded decisions. Require an
+    authorised decision to add a signed fleet-decision event, while a
+    rejected decision adds none, as specified by Algorithm 1.
     """
     f = Fleet.create(10, seed=71)
     before = sum(len(r.chain.events) for r in f.robots)
@@ -437,15 +419,11 @@ def test_committed_decision_event_repopulates_the_replay_guard() -> None:
 
 
 def test_verify_caste_rejects_a_forged_roster(fleet: Fleet) -> None:
-    """Currency evidence is only as good as the roster's own signature.
+    """Authenticate the roster before using it as currency evidence.
 
-    A caller could hand verify_caste a roster it built itself, with a
-    caste digest chosen to match a stale certificate. If the method
-    trusted the roster's contents without checking the roster's operator
-    signature, the stale certificate would be accepted. It must not: the
-    roster is verified under root_O first. This is the flaw verify_manifest
-    also had, closed the same way, and a reviewer caught that verify_caste
-    had not been given the same treatment.
+    A forged roster can carry a caste digest matching a stale certificate.
+    Require its signature under root_O to be verified before accepting any
+    caste claim, as also required for manifest admission.
     """
     op = fleet.operator
     robot = fleet.robots[0]
@@ -537,14 +515,10 @@ def test_caste_certificate_payload_is_domain_separated(fleet: Fleet) -> None:
 def test_operator_can_require_a_larger_quorum_than_the_default(
     fleet: Fleet,
 ) -> None:
-    """An operator raising t for a hazardous action must be obeyed.
+    """Enforce an operator's signed threshold above the default.
 
-    The paper describes t as operator policy with ceil(0.8N) as a default.
-    An earlier revision made that description false: t was a module
-    constant, nothing signed carried it, and a fleet whose operator wanted
-    unanimity had no way to say so. This is that scenario -- the operator
-    signs t = N, and a decision carrying only the default quorum must not
-    verify.
+    The default is ceil(0.8N), but an operator can require unanimity. Sign
+    t = N and reject a decision carrying only the default quorum.
     """
     n = len(fleet.robots)
     epoch = fleet.epoch + 1
@@ -781,14 +755,11 @@ def _fleet_with_thresholds(thresholds: list[int]) -> Fleet:
 def test_changed_policy_travels_with_the_certificate() -> None:
     """A policy change under static membership must not be deduplicated away.
 
-    The epoch root once committed the member set alone, and the exporter
-    deduplicated on it. Two epochs with the same members but different
-    signed quorum thresholds therefore shared a commitment: only the
-    earlier roster was embedded, the later epoch's threshold vanished
-    from the document, and `regulator_verify` still returned true. An
-    auditor holding that certificate would check an epoch-1 decision
-    against a threshold the operator never set for epoch 1. Committing
-    the whole policy makes the second epoch carry its own roster.
+    Two epochs with identical members but different signed thresholds
+    must retain separate roster attachments. Otherwise deduplication
+    would erase the later policy and an auditor could apply the wrong
+    threshold to an epoch's decision. Full-policy commitments distinguish
+    the two rosters even when membership is unchanged.
     """
     f = _fleet_with_thresholds([5, 6])
     cert = export_certificate(f.operator, [0, 1])

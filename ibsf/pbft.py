@@ -54,18 +54,12 @@ def _mac_batch_ms(key: bytes, msg: bytes, count: int) -> float:
 def _broadcast_quorum_ms(
     net: NetworkModel, rng: np.random.Generator, n: int, quorum: int
 ) -> float:
-    """Leader-to-all broadcast, timed to quorum receipt rather than to all.
+    """Leader-to-all broadcast timed to quorum receipt.
 
-    A replica enters the next phase the moment the pre-prepare reaches
-    it, and the protocol advances once a quorum of replicas has done so.
-    The LEADER is itself one of those replicas and holds the pre-prepare
-    at time zero, so only quorum-1 follower receipts are waited for; an
-    earlier revision waited for the quorum-th follower, overstating this
-    round by one order statistic. Charging the slowest of the (N-1)
-    links would be worse still: the maximum of N log-normal draws grows
-    with N while a fixed-fraction order statistic does not, so a
-    max-gate manufactures a divergent PBFT tail at large N. Both
-    baselines are timed at quorum order statistics throughout.
+    The leader has the pre-prepare at time zero and counts toward quorum.
+    Only quorum-1 follower receipts are needed. Waiting for all N-1 links
+    would measure the maximum link delay rather than quorum progression;
+    waiting for quorum follower receipts would count one extra replica.
     """
     if n <= 1:
         return 0.0

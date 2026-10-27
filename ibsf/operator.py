@@ -73,24 +73,17 @@ def roster_policy_digest(
     t_quorum: int = 0,
     caste_digests: tuple[bytes, ...] = (),
 ) -> bytes:
-    """Epoch- and time-independent commitment to a roster's whole policy.
+    """Epoch- and time-independent commitment to the roster's full policy.
 
-    Bound into each epoch root, and the key the exporter deduplicates on,
-    so that epochs sharing a policy reference one commitment that a single
-    embedded roster satisfies. Everything the operator decides is inside
-    it; only `epoch` and `t_open`, which are per-epoch bookkeeping rather
-    than policy, are left out. That exclusion is what keeps the attachment
-    a one-off O(N) component for a fleet whose policy does not change.
+    Each epoch root binds this commitment. The exporter deduplicates on it,
+    so epochs sharing a policy can reference one embedded roster. Only
+    epoch and t_open are excluded as per-epoch bookkeeping. An unchanged
+    policy therefore requires a one-off O(N) roster attachment.
 
-    An earlier revision committed the member set alone. Membership is the
-    weaker statement, and binding it was a real hole rather than a
-    cosmetic one: two epochs with identical members but different signed
-    quorum thresholds shared a commitment, so the exporter kept only the
-    earlier roster and the later epoch's threshold vanished from the
-    document while verification still returned true. An auditor holding
-    that certificate would then verify a decision against a threshold the
-    operator had not set for that epoch. Committing the full policy makes
-    a policy change force its own roster attachment.
+    The commitment includes membership, capabilities, caste assignments
+    and quorum threshold. Membership alone cannot distinguish epochs with
+    identical keys but different authority. A policy change must produce
+    a distinct commitment and retain its own roster attachment.
     """
     order = sorted(range(len(member_pks)), key=lambda i: member_pks[i])
 
@@ -115,24 +108,15 @@ def roster_policy_digest(
 class SignedRoster:
     """The operator's signed declaration of policy for one epoch.
 
-    Signed by sk_O over, in order: the epoch index, the ordered member
-    keys, their per-member capability digests, the epoch's open time, the
-    quorum threshold in force, and the per-member caste digests. Written
-    out:
+    Signed by sk_O over the epoch index, ordered member keys, per-member
+    capability digests, epoch open time, quorum threshold and caste digests:
 
         sigma_O( e || R^e || <H(cap_i)>_i || t_open^e || t^e
                  || <H(caste_i)>_i )
 
-    The caste digests are the newest component and are easy to leave out
-    of a description; they are what makes a caste certificate's currency
-    checkable, so an account of the signed payload that stops at t^e
-    understates what the operator is bound to.
-
-    Note the two thresholds this construction keeps distinct, because one
-    symbol was previously overloaded for both. `t_open` is a *time*: the
-    instant epoch `e` opens, paired with `t_close` in `SignedEpochRoot`.
-    `t_quorum` is the *quorum size*: how many distinct members must sign
-    before a fleet decision is authorised.
+    The caste digests bind the assignments used to check certificate
+    currency. t_open is a time, paired with t_close in SignedEpochRoot;
+    t_quorum is the number of distinct signatures required for a decision.
     """
 
     epoch: int
@@ -159,21 +143,13 @@ class SignedRoster:
     def digest(self) -> bytes:
         """Full roster digest over every component the operator signs.
 
-        The capability digests are inside what sk_O signs. Signing the key
-        list alone authenticates *who* is in the fleet but not *what each
-        member is certified to do*, and a member that is genuinely on the
-        roster could then present a manifest claiming any capability set
-        it liked: the admission check would confirm its key and never look
-        at the claim. Binding position-aligned capability digests closes
-        that, so a capability set is admissible only if the operator
-        signed that set for that key in that epoch.
+        Position-aligned capability digests bind each key to the capabilities
+        certified for it in the epoch. Signing only membership would allow a
+        member to present unsupported capability claims.
 
-        The quorum threshold is inside it for the same reason. The paper
-        describes `t` as operator policy with a stated default, but an
-        earlier revision left it a module constant that nothing signed
-        carried, so an operator could not in fact require a larger quorum
-        for a hazardous action and a verifier had nothing to check its own
-        threshold against. Signing it makes the description true.
+        The quorum threshold is also signed, allowing an operator to require a
+        larger quorum for an action and giving the verifier an authenticated
+        policy against which to check a decision.
         """
         return sha256(
             ROSTER_DOMAIN
@@ -216,18 +192,10 @@ class SignedRoster:
 class SignedEpochRoot:
     """sigma_O(e || R^e || t_e || t_{e+1} || policy_digest || prev_root_digest).
 
-    The field order and contents are exactly what `epoch_root_payload`
-    hashes. An earlier version of this line omitted `e`, so the
-    displayed payload did not verify against the signature the class
-    carries -- the kind of drift that is invisible until someone tries
-    to reimplement a verifier from the docstring.
-
-    `prev_root_digest` is the payload digest of the previous epoch this
-    operator closed, or 32 zero bytes for its first. Without it each root
-    is an independent statement, so a certificate could omit whole epochs
-    and still verify: every remaining signature is valid and nothing says
-    what should have been between them. Chaining the roots makes an
-    omitted epoch a broken link (Section VIII).
+    The field order matches epoch_root_payload. prev_root_digest is the
+    payload digest of the preceding closed epoch, or 32 zero bytes for the
+    first root. Binding this link makes an omitted epoch detectable even
+    when every remaining root has a genuine operator signature.
     """
 
     epoch: int
@@ -476,29 +444,16 @@ class Operator:
     ) -> bool:
         """Check a caste claim for both issuance and currency.
 
-        Two questions, and an earlier revision answered only the first.
-        Issuance: did this operator sign this caste for this key? That is
-        the certificate signature check, and it is necessary. Currency: is
-        that caste the one in force now? A certificate signature cannot
-        answer it, because a superseded certificate stays validly signed
-        for ever, so a robot demoted from `supervisor` to `observer` could
-        keep presenting the `supervisor` certificate it was genuinely
-        issued.
+        Issuance requires the operator's signature on the caste certificate.
+        Currency requires the caste assigned to that key in the current epoch.
+        A superseded certificate remains validly signed, so issuance alone
+        cannot detect replay after demotion.
 
-        Currency is answered by the epoch roster, which the operator
-        re-signs each epoch with a per-member caste digest. But the roster
-        is only evidence of currency if it is itself the operator's and is
-        the one for the epoch believed current. An earlier revision compared
-        the certificate's caste against `roster.caste_digest_for(pk)` while
-        verifying neither the roster's own signature nor its epoch, so a
-        caller handing in a forged roster whose caste digest was chosen to
-        match a stale certificate would have the certificate accepted. This
-        mirrors the flaw `verify_manifest` had, and is closed the same way:
-        the roster signature is verified under `root_O`, and a roster for
-        any epoch but `expected_epoch` is refused before its contents are
-        consulted. The exposure window is therefore one epoch length: a
-        caste change takes effect at the next boundary, the same bound the
-        roster membership check carries.
+        The operator-signed epoch roster supplies the current caste digest.
+        Validate its signature under root_O and require expected_epoch before
+        using its contents. Otherwise a forged roster could support a stale
+        certificate. A caste change takes effect at the next epoch boundary,
+        so the exposure window is one epoch, as for roster membership.
         """
         if roster.epoch != expected_epoch:
             return False
@@ -532,42 +487,23 @@ class Operator:
         t_close: float,
         member_pks: dict[int, bytes],
     ) -> tuple[SignedEpochRoot, EpochClose, float]:
-        """Epoch close: Merkle root over identity-bound leaves + signature.
+        """Close an epoch with a Merkle root over identity-bound leaves.
 
-        `member_pks` maps each robot id in `chains` to that member's
-        public key in the epoch's operator-signed roster. It is required,
-        not optional: a root over bare chain heads would let a verifier
-        confirm that some chain ended at a head without establishing
-        whose, so every leaf here commits to (epoch, slot, member key,
-        head) and the operator's signature covers that attribution.
+        member_pks maps each robot id in chains to its public key in the signed
+        roster. Each leaf binds epoch, slot, member key and chain head. The
+        supplied keys must equal the roster's member set without repeats; both
+        are ordered by key bytes, allowing the verifier to check each slot.
 
-        The supplied keys must be exactly the epoch roster's member set,
-        with no repeats. Enforcing equality makes slot i of the leaf
-        vector coincide with position i of the roster (both are ordered
-        by key bytes), so a verifier holding the signed roster can check
-        a leaf's slot rather than trusting the exporter's slot label.
+        Before signing, validate each chain's hash pointers, continuity with
+        the operator's previously committed head, and the member signature on
+        every new event. Unsigned, malformed or wrong-key material aborts the
+        close with ValueError.
 
-        Every chain is admitted before anything is signed: hash pointers
-        replayed, continuity checked against the head this operator
-        committed for that member at the previous close, and a valid BLS
-        signature by the member's roster key required on every event
-        appended since. An unsigned, malformed, or wrong-key chain aborts
-        the close with `ValueError`, because a countersigned fleet root
-        over unchecked material would let the operator's signature stand
-        behind evidence nobody validated.
-
-        The roster binding uses the epoch-independent POLICY digest, so
-        epochs with unchanged policy all bind the same commitment and the
-        exported certificate can embed one shared roster (O(N)) rather
-        than one per epoch (O(Nk)). Binding membership alone was not
-        enough: it let an epoch that changed its quorum threshold share a
-        commitment with one that had not, so the changed policy was
-        deduplicated out of the exported document while verification
-        still passed.
-
-        The signed payload also cites the previous epoch's payload digest,
-        so the sequence of roots is itself a chain and a certificate that
-        omits an epoch fails linkage rather than verifying as complete.
+        Bind the epoch-independent full policy digest, allowing unchanged
+        policies to share one O(N) roster attachment instead of O(Nk) repeated
+        rosters. A changed quorum threshold or other policy field must require
+        a distinct attachment. Also bind the preceding epoch payload digest,
+        so omission of an epoch breaks the root sequence.
         """
         roster = self.rosters[epoch]
         missing = sorted(rid for rid in chains if rid not in member_pks)
@@ -631,41 +567,23 @@ def verify_manifest(
 ) -> bool:
     """Member-side admission check for a presented identity manifest.
 
-    This is the check the Sybil-resistance property rests on, so it is a
-    callable path rather than a statement about what members ought to do.
-    A manifest is admissible only if its key sits in an epoch roster that
-    verifies under the operator's public key, and only if its operator
-    root pointer matches the operator the member itself trusts. Checking
-    roster membership without checking the roster's signature would admit
-    any key list an adversary cared to present; checking the signature
-    without checking `root_o` would admit a robot commissioned by a
-    different operator entirely.
+    Require a roster signed under the trusted operator public key, member
+    key inclusion, and a matching operator root pointer. Membership alone
+    would permit an adversarial key list; signature verification without a
+    root pointer check would permit a different operator's member.
 
-    `expected_epoch` closes a gap a reviewer found in the check as first
-    shipped: every condition below was verified against whatever roster
-    the caller handed in, and a roster is validly signed for ever. A peer
-    holding the roster of five epochs ago could therefore admit a robot
-    the operator has since removed -- each individual check passes, on a
-    stale document. The verifying member states which epoch it believes
-    is current (from its own last countersigned decision, whose aux binds
-    the epoch), and a roster for any other epoch is refused outright
-    rather than evaluated.
+    A roster remains validly signed after expiry. The verifying member
+    supplies expected_epoch from its view of the current epoch, for example
+    its last countersigned decision. Refuse any other epoch before using
+    the roster, preventing replay of a removed member's old admission.
 
-    The claimed capability set is checked, not merely carried. Verifying
-    key membership alone would admit a genuine roster member presenting a
-    manifest that claims any capability it cared to name, because nothing
-    the operator signed would contradict it; the check would confirm who
-    the robot is and never look at what it says it may do. The roster's
-    per-member capability digest is what makes the claim falsifiable, so
-    a manifest is admissible only if the operator signed that capability
-    set for that key in that epoch.
+    Compare the claimed capability digest with the signed digest for that
+    key and epoch. Key membership alone does not authenticate capabilities.
 
-    Scope, stated plainly: this function is the admission predicate the
-    construction supplies, and the reference implementation's decision
-    path does not consume manifests (members sign the operator's decision
-    message; no role-request flows between peers). Whether every
-    role-dependent request in a deployment passes through this check is a
-    deployment obligation the primitive cannot discharge by itself.
+    This function supplies the admission predicate. The reference decision
+    path does not consume manifests: members sign the operator's decision
+    message, with no peer role-request flow. Ensuring that deployment
+    requests pass through this predicate remains a deployment obligation.
     """
     if roster.epoch != expected_epoch:
         return False

@@ -46,10 +46,8 @@ def _roster_digest(roster: SignedRoster) -> bytes:
     was overridden. The consequence is that the two must be kept in
     step, and the per-member capability digests, the quorum threshold and
     the per-member caste digests are all part of what the operator signs.
-    Keeping them in step is not automatic: adding caste binding to
-    `sign_roster` without adding it here made every exported certificate
-    fail to verify, which is the failure mode this duplication is meant
-    to have -- loud, and caught by the certificate test.
+    The certificate tests detect mismatches between the two encodings;
+    both must include every signed field, including caste binding.
     """
     return sha256(
         ROSTER_DOMAIN

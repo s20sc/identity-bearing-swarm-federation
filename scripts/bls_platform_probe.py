@@ -1,28 +1,18 @@
 #!/usr/bin/env python3
-"""Standalone BLS12-381 cost probe, for running on other hardware.
+"""Standalone BLS12-381 primitive-cost probe for other hardware.
 
-Self-contained on purpose: it imports nothing from this repository and
-needs no numpy, so it can be copied to a bare ARM64 host, a Jetson, or
-any machine with Python and `blspy`, and run without checking out the
-project. Copy the single file across, `pip install blspy`, run it, and
-bring the JSON back.
+This script requires only Python and blspy and imports no project code.
+Copy it to the target host, install blspy and collect the JSON output:
 
     pip install blspy
     python3 bls_platform_probe.py --label "arm64-server" > probe.json
 
-Why this exists. The paper's end-to-end latencies were measured on a
-desktop-class machine, and a robotics reviewer is entitled to ask what
-they become on a robot. The answer is not a single rescaling factor,
-because the protocol's cost has two parts that scale differently: each
-member pays one hash-to-curve signature, while the operator pays a
-fixed number of pairings plus N cheap group additions. Measuring the
-primitives separately is what lets a reader carry the numbers to a
-platform neither we nor they have benchmarked.
-
-The verification sweep over participant counts is the load-bearing one.
-If verification cost were linear in N, the construction would not scale;
-if it is close to flat, a slower platform shifts the curve without
-changing its shape.
+The end-to-end evaluation uses a desktop-class machine. Primitive
+measurements on other hosts separate the member's hash-to-curve signing
+cost from operator verification, which uses pairings and N group
+additions. These components may scale differently across platforms.
+The participant-count sweep measures how aggregation and verification
+costs vary with fleet size; it does not validate robot deployment.
 """
 
 from __future__ import annotations
