@@ -389,14 +389,11 @@ def test_decision_anchor_is_the_lowest_roster_position() -> None:
 
 
 def test_committed_decision_event_repopulates_the_replay_guard() -> None:
-    """Section VII's stated recovery path must be a parse, not an inversion.
+    """Check that committed events carry the labels needed to restore a guard.
 
-    The manuscript says a production operator rebuilds its (epoch, seq)
-    uniqueness state from committed events. That is only realizable if
-    the labels survive in the record: a payload of 32 opaque digest bytes
-    cannot be inverted, so a restarted operator would come back with an
-    empty guard and re-admit a captured tuple. The event therefore
-    carries the labels in fixed-width fields beside the digest.
+    The test explicitly restores state from the committed event labels.
+    It exercises a committed decision, with restart recovery outside
+    the reference implementation.
     """
     f = Fleet.create(10, seed=72)
     res = run_decision(f, b"hazardous", NetworkModel(), np.random.default_rng(5))

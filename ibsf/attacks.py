@@ -1,30 +1,10 @@
-"""Scripted Sybil attack scenarios (Section VIII-A).
+"""Scripted checks of authorisation and its trust assumptions.
 
-Every scenario runs the REAL verify pipeline of Algorithm 1 with real
-BLS material and reports `admitted` = the pipeline's actual accept
-verdict. Verification is always roster-resolved: the participating set
-is a bitmap over the operator-signed roster (`verify_subset`), so an
-attacker cannot substitute caller-supplied keys it controls.
-
-Two scenarios deserve a note on threat model, because a rigged
-adversary would make the result vacuous:
-
-  * `rogue_subset_addition` runs the TEXTBOOK cancellation attack, not a
-    weakened stand-in. The adversary chooses its own secret x and
-    publishes pk' = g^x * (prod_{i in S} pk_i)^{-1} over a set S of
-    honest roster keys. The aggregate key over S u {pk'} then collapses
-    to g^x, so the adversary ALONE forges a signature that satisfies a
-    naive `fast_aggregate_verify` over that key set. The scenario
-    measures both halves: that the attack really works against an
-    aggregator without proof-of-possession (`naive_aggregate_admits`),
-    and that our construction still rejects it (`admitted`).
-
-  * `operator_key_compromise` gives the adversary sk_O and NOTHING ELSE.
-    It mints its own roster out of keys it generated itself (whose PoPs
-    it can therefore produce) and drives a decision under that roster.
-    It never borrows an honest robot's secret, so admission=1.0 measures
-    the real theoretical bound (Sybil resistance reduces to operator-key
-    custody) rather than an artefact of handing the adversary the fleet.
+Each scenario reports the reference verifier's admission decision.
+Scenario diagnostics distinguish the member-side and operator-side
+checks. The roster-substitution control changes both the roster and
+participant bitmap, testing their joint binding. The operator-key
+compromise control records the bound when the trust anchor is lost.
 """
 
 from __future__ import annotations

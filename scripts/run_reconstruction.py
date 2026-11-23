@@ -1,70 +1,19 @@
-"""RQ3: forensic reconstruction under partial agent loss and corruption.
+"""Measure whole-chain admission after simulated post-close log corruption.
 
-For each (n, f, seed): robots log events through one epoch, the operator
-closes and signs the epoch, and then each robot is INDEPENDENTLY
-corrupted with probability f. The number of affected robots is therefore
-Binomial(n, f) rather than a fixed ceil(f*n): a fixed count would make
-the recovered fraction exactly 1-f in every trial, which is arithmetic
-restated as a measurement, not a measurement.
+Each trial starts with 20 records per member. After closure the runner
+independently selects logs for corruption. The auditor uses supplied
+logs, roster keys, retained chain heads and the signed epoch root.
 
-Each affected robot draws one of three corruption modes uniformly:
+events_present counts supplied records. events_signature_verified counts
+records in logs passing the signature-only screening. events_provable
+counts records on chains admitted against their committed head and
+authenticated fleet position, and events_recoverable divides that count
+by events_total. Individual retained event proofs use a separate path.
 
-  * `total_loss` -- the whole chain is erased. The event bodies,
-    signatures and hash pointers no longer exist anywhere in the process.
-  * `tail_truncation` -- a uniformly random non-empty suffix of the chain
-    is erased. What remains is a genesis-rooted, internally consistent,
-    correctly signed chain: it is only short.
-  * `interior_tamper` -- one uniformly chosen event's payload is mutated
-    in place. The chain is full length and every byte but one is
-    authentic.
-
-The auditor is a separate function that receives only what survives:
-
-  * the operator-signed epoch root (`SignedEpochRoot`),
-  * the per-slot chain-head commitments recorded by the operator at
-    epoch close (32 bytes per roster slot),
-  * the roster public keys (which slots exist, and whose key each is),
-  * whatever chain data still exists.
-
-It does not receive the Merkle leaves. It rebuilds them as
-`epoch_leaf(epoch, slot, member_pk, head)` from the heads and the roster
-keys, then recomputes the tree and compares against the signed root, so
-the leaf vector it works from is authenticated AND identity-bound: a
-head that verifies at slot i also proves the slot-i member is the one
-who produced it. Nothing about slot-to-robot attribution is taken on
-trust from an out-of-band table.
-
-It then ATTEMPTS, for every roster slot and every event index, to
-produce and check a proof binding that event to the signed epoch root:
-replay the hash pointers from the event to the chain head, check the
-head against the slot's head commitment, and verify the Merkle path.
-Per-event BLS signatures are verified against the roster key. Every
-count below is the measured outcome of that loop; nothing is assigned
-from the number of corrupted agents.
-
-Two consequences are measured rather than engineered around.
-
-1. Because the epoch leaf commits to the chain HEAD, a truncated or
-   interior-tampered chain can no longer be replayed to the committed
-   head, so NONE of its events stay provable even though almost all of
-   its bytes survive and (for truncation) every remaining signature is
-   still valid. Corruption is all-or-nothing per chain under head-only
-   commitment. `events_present` and `events_signature_verified` are
-   emitted alongside `events_provable` so the size of that gap is
-   visible rather than implied. This is a limitation of the
-   construction, and the trace is what shows it.
-
-2. What must hold at 100% is DETECTION: no corrupted chain may be
-   silently accepted. Each trial records, per mode, whether the auditor
-   flagged the chain and why (absent, broken hash link, invalid
-   signature, or head mismatch against the committed leaf), how many
-   corrupted chains still contributed provable events
-   (`silent_acceptances`, which must be 0), and how many intact chains
-   were wrongly flagged (`intact_chains_flagged`, also 0). Detection is
-   compared against the runner's ground-truth record of which slots it
-   corrupted, so the rate can come out below 1.
-
-Emits data/reconstruction.jsonl.
+Detection is scored against the runner's record of affected slots.
+silent_acceptances counts corrupted chains admitted by the screening,
+and intact_chains_flagged counts the intact chains it flags. The records
+are written to data/reconstruction.jsonl.
 """
 
 from __future__ import annotations

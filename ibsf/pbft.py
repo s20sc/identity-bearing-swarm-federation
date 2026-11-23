@@ -1,27 +1,11 @@
-"""PBFT baseline over the same simulated network substrate (Section VIII).
+"""Timing and message accounting for a three-round PBFT schedule.
 
-A fair latency model of three-phase PBFT (pre-prepare, prepare, commit)
-with MAC authenticators, as in Castro-Liskov practical BFT:
-  - 3 sequential communication rounds; prepare and commit are
-    all-to-all. No round is gated on the slowest of its links (the
-    100th percentile); every round completes at a quorum order
-    statistic, the same accounting the BLS construction receives.
-    Pre-prepare is a leader broadcast, and a replica enters the prepare
-    phase on its own receipt rather than waiting for its peers, so that
-    round completes at the (2f+1)-th fastest of the (N-1) leader links.
-    Prepare and commit complete when 2f+1 replicas have each collected
-    2f+1 matching messages: per receiving replica, its round-complete
-    time is the (2f+1)-th smallest of its (N-1) incoming one-way delays,
-    and the round completes at the (2f+1)-th smallest of those
-    per-replica quorum times.
-  - per-round processing at the bottleneck replica: 2f+1 quorum-MAC
-    verifications per message batch, measured wall-clock on real
-    HMAC-SHA256 operations;
-  - message complexity 2N(N-1) + (N-1) versus 2N for the BLS
-    construction.
-
-View changes and batching pathologies are omitted, so the model is a
-conservative (optimistic-for-PBFT) baseline.
+The model draws delays for a leader broadcast and two all-to-all
+rounds. Each quorum includes the local replica's message. It charges
+for a batch of HMAC-SHA256 tag generation at one endpoint; tag
+comparison and a replica state machine are outside the model. Its
+message tally is (N - 1) + 2N(N - 1), and its timing parameters are
+not a consensus-safety configuration.
 """
 
 from __future__ import annotations
@@ -77,12 +61,9 @@ def _quorum_round_ms(
 ) -> float:
     """Latency of one all-to-all quorum round via order statistics.
 
-    Each of the N receiving replicas draws (N-1) incoming one-way delays.
-    A replica reaches quorum once it has collected `quorum` matching
-    messages, i.e. at the `quorum`-th smallest of its (N-1) delays. The
-    round completes when `quorum` replicas have reached that state, i.e.
-    at the `quorum`-th smallest of the per-replica quorum times. This is
-    the time-to-quorum, not the slowest-link (100th percentile) time.
+    Each receiving replica draws N - 1 incoming delays. Its own message
+    counts, so it advances after quorum - 1 arrivals from peers. The
+    round ends at the quorum-th local completion time.
     """
     if n <= 1:
         return 0.0
@@ -102,7 +83,7 @@ def _quorum_round_ms(
 def run_pbft_decision(
     n: int, net: NetworkModel, rng: np.random.Generator, seed: int
 ) -> PBFTResult:
-    """One PBFT consensus instance over n replicas."""
+    """Time the modelled three-round schedule for n replicas."""
     f = (n - 1) // 3
     quorum = 2 * f + 1
     key = hashlib.sha256(f"pbft/{seed}".encode()).digest()
@@ -117,8 +98,8 @@ def run_pbft_decision(
     # Round 3: commit, all-to-all, same shape.
     r3 = _quorum_round_ms(net, rng, n, quorum)
 
-    # MAC processing at the bottleneck replica: verify quorum messages
-    # in prepare and commit rounds plus the pre-prepare.
+    # Charge tag generation for the prepare and commit quorums
+    # and the pre-prepare at one endpoint.
     mac_ms = _mac_batch_ms(key, msg, 2 * quorum + 1)
 
     messages = (n - 1) + 2 * n * (n - 1)

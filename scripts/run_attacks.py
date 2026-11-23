@@ -1,13 +1,9 @@
-"""RQ1: Sybil admission under 4 attack scenarios + key-compromise bound.
+"""Record the scripted authorisation checks in data/attacks.jsonl.
 
-Emits data/attacks.jsonl: 5 scenarios x 4 fleet sizes x 30 seeds.
-
-Besides the accept/reject verdict, each record carries the scenario's
-per-trial diagnostic fields. For the rogue-key scenario these state
-whether the cancellation attack was actually realisable against a naive
-aggregator and which of our two defences rejected it; for the
-operator-key-compromise bound they state how many honest secret keys the
-adversary used (it must be zero for the bound to mean anything).
+The suite runs six defended scenarios and a separate operator-key
+compromise control. Each scenario is exercised over four fleet sizes
+and 30 seeds per size. Each record gives the admission verdict and any
+diagnostic fields emitted by the scenario.
 """
 
 from __future__ import annotations

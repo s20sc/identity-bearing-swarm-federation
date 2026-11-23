@@ -669,9 +669,8 @@ def _invariants() -> dict[str, bool]:
     checks["reconstruction_negative_control_fires"] = bool(controls) and all(
         controls
     )
-    # every corrupted chain must be detected: flagged by the auditor, and
-    # contributing no provable events. This is the claim RQ3 rests on, so
-    # it is checked over every trial rather than summarised.
+    # Check detection and whole-chain admission separately. A corrupted
+    # chain can still contain signed records without passing admission.
     corrupted_total = sum(
         sum(r.get("corrupted_by_mode", {}).values()) for r in recon
     )
